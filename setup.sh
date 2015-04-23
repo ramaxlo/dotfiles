@@ -62,8 +62,19 @@ setup_vim()
 
 check()
 {
+	local PASS='1'
+
 	if ! which git > /dev/null 2>&1; then
 		echo "Please install git"
+		PASS='0'
+	fi
+
+	if ! which vim > /dev/null 2>&1; then
+		echo "Please install vim"
+		PASS='0'
+	fi
+
+	if [ "$PASS" == '0' ]; then
 		exit 1
 	fi
 }
