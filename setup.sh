@@ -9,6 +9,11 @@ setup_bin()
 	fi
 
 	cp -a bin/* ~/bin
+
+	echo "Clone grabserial repo"
+	git clone https://github.com/ramaxlo/grabserial.git
+	cp grabserial/grabserial ~/bin
+	rm -rf grabserial
 }
 
 setup_tmux()
