@@ -84,6 +84,13 @@ check()
 	fi
 }
 
+setup_gitconfig()
+{
+	echo "Setup gitconfig"
+
+	cp gitconfig ~/.gitconfig
+}
+
 ################
 #    START
 ################
@@ -93,5 +100,6 @@ setup_bin
 setup_tmux
 setup_shell
 setup_vim
+setup_gitconfig
 
 echo "Done"
