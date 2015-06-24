@@ -25,7 +25,8 @@ Plugin 'CSApprox'
 Plugin 'ScrollColors'
 Plugin 'sessionman.vim'
 Plugin 'DirDiff.vim'
-Plugin 'motemen/git-vim'
+"Plugin 'motemen/git-vim'
+Plugin 'fugitive.vim'
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
@@ -91,10 +92,10 @@ nmap <F5> :call Help(expand("<cword>"))<CR>
 nnoremap <silent> <F6> :YRShow<CR>
 
 " ======== Git ========
-nmap ,gb :GitBlame<CR>
-nmap ,gs :GitStatus<CR>
-nmap ,gl :GitLog<CR>
-nmap ,ga :GitAdd<CR>
+nmap ,gb :Gblame<CR>
+nmap ,gs :Gstatus<CR>
+nmap ,gl :Glog -- %<CR>:cope<CR>
+nmap ,ga :Gadd<CR>
 
 if (&term == 'xterm' || &term =~? '^screen')
 	" On my machine, I use Konsole with 256 color support
