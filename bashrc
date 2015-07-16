@@ -16,6 +16,13 @@ alias tmux='tmux -2'
 alias minicom='LANG=en minicom'
 alias less='less -R'
 
+# Git alias
+alias gid='git diff'
+alias gidc='git diff --cached'
+alias gis='git status'
+alias gic='git commit'
+alias gia='git add'
+
 # Prevent C-s from being interpreted by the terminal
 stty -ixon
 
