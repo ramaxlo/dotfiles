@@ -22,6 +22,8 @@ alias gidc='git diff --cached'
 alias gis='git status'
 alias gic='git commit'
 alias gia='git add'
+alias gil='git log'
+alias gip='git push'
 
 # Prevent C-s from being interpreted by the terminal
 stty -ixon
