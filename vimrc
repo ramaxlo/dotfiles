@@ -97,6 +97,7 @@ nmap ,gs :Gstatus<CR>
 nmap ,gl :Glog -- %<CR>:cope<CR>
 nmap ,ga :Gwrite<CR>
 nmap ,gc :Gcommit<CR>
+nmap ,gd :Gvdiff<CR>
 
 if (&term == 'xterm' || &term =~? '^screen')
 	" On my machine, I use Konsole with 256 color support
