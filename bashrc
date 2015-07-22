@@ -24,6 +24,10 @@ alias gic='git commit'
 alias gia='git add'
 alias gil='git log'
 alias gip='git push'
+alias gib='git branch'
+alias gibr='git branch -r'
+alias gicc='git checkout'
+alias giu='git pull'
 
 # Prevent C-s from being interpreted by the terminal
 stty -ixon
