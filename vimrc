@@ -106,3 +106,19 @@ if (&term == 'xterm' || &term =~? '^screen')
 endif
 
 set guifont=DejaVu\ Sans\ Mono\ 11
+
+" ==== Window operations ====
+nmap + <C-w>+
+nmap - <C-w>-
+if has("autocmd")
+	" Because we have minibufexpl.vim, the winnr
+	" of current buffer will start from 2
+	autocmd BufEnter *
+	\      if winnr() == 2   |
+	\           nmap < <C-w><|
+	\           nmap > <C-w>>|
+	\      else              |
+	\           nmap < <C-w>>|
+	\           nmap > <C-w><|
+	\      endif             |
+endif
