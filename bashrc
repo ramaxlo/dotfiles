@@ -28,6 +28,7 @@ alias gib='git branch'
 alias gibr='git branch -r'
 alias gicc='git checkout'
 alias giu='git pull'
+alias gish='git show'
 
 # Prevent C-s from being interpreted by the terminal
 stty -ixon
