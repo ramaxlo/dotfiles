@@ -27,13 +27,14 @@ Plugin 'sessionman.vim'
 Plugin 'DirDiff.vim'
 "Plugin 'motemen/git-vim'
 Plugin 'fugitive.vim'
+Plugin 'scrooloose/nerdtree'
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
 Plugin 'fisadev/vim-ctrlp-cmdpalette'
 
 call vundle#end()
-filetype on
+filetype plugin on
 
 " CtrlP ------------------------------
 
@@ -89,7 +90,8 @@ nmap <F2> :SessionList<CR>
 nmap <F3> :SessionSave<CR>
 nmap <F4> :TlistToggle<CR>
 nmap <F5> :call Help(expand("<cword>"))<CR>
-nnoremap <silent> <F6> :YRShow<CR>
+nnoremap <silent> <F6> :NERDTreeToggle<CR>
+nnoremap <silent> <F7> :YRShow<CR>
 
 " ======== Git ========
 nmap ,gb :Gblame<CR>
@@ -122,3 +124,6 @@ if has("autocmd")
 	\           nmap > <C-w><|
 	\      endif             |
 endif
+
+" ==== NERDTree ====
+let g:NERDTreeWinPos = 'right'
