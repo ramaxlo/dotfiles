@@ -28,6 +28,7 @@ Plugin 'DirDiff.vim'
 "Plugin 'motemen/git-vim'
 Plugin 'fugitive.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'aceofall/gtags.vim'
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
@@ -127,3 +128,8 @@ endif
 
 " ==== NERDTree ====
 let g:NERDTreeWinPos = 'right'
+
+" ==== gtags ====
+let GtagsCscope_Auto_Load = 1
+let CtagsCscope_Auto_Map = 1
+let GtagsCscope_Quiet = 1
