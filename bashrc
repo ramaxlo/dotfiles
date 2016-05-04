@@ -33,4 +33,4 @@ alias gish='git show'
 # Prevent C-s from being interpreted by the terminal
 stty -ixon
 
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/bin/go

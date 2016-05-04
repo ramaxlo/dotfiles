@@ -29,6 +29,7 @@ Plugin 'DirDiff.vim'
 Plugin 'fugitive.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
+Plugin 'fatih/vim-go'
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
@@ -133,3 +134,9 @@ let g:NERDTreeWinPos = 'right'
 let GtagsCscope_Auto_Load = 1
 let CtagsCscope_Auto_Map = 1
 let GtagsCscope_Quiet = 1
+
+" ==== Go ====
+au FileType go nmap ,oi <Plug>(go-info)
+au FileType go nmap ,od <Plug>(go-doc)
+au FileType go nmap ,op :GoImports<CR>
+au FileType go nmap ,oc <Plug>(go-callstack)
