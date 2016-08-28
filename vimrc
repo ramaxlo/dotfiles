@@ -74,6 +74,9 @@ let g:ctrlp_custom_ignore = {
  \ 'file': '\.pyc$\|\.pyo$',
  \ }
 
+" Use git to fetch list of files if we're in a repository
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
