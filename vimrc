@@ -27,6 +27,7 @@ Plugin 'sessionman.vim'
 Plugin 'DirDiff.vim'
 "Plugin 'motemen/git-vim'
 Plugin 'fugitive.vim'
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
 Plugin 'fatih/vim-go'
@@ -105,6 +106,10 @@ nmap ,gl :Glog -- %<CR>:cope<CR>
 nmap ,ga :Gwrite<CR>
 nmap ,gc :Gcommit<CR>
 nmap ,gd :Gvdiff<CR>
+
+" ==== airline ====
+set laststatus=2
+let g:airline_powerline_fonts = 1
 
 if (&term == 'xterm' || &term =~? '^screen')
 	" On my machine, I use Konsole with 256 color support
