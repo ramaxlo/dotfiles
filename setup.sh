@@ -16,7 +16,7 @@ setup_bin()
 	rm -rf grabserial
 
 	echo "Install go related binaries"
-	tar jxf go_bin.tar.bz2 -C ~/bin
+	tar Jxf go_bin.tar.xz -C ~/bin
 }
 
 setup_tmux()
