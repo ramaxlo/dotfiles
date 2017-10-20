@@ -30,6 +30,7 @@ Plugin 'fugitive.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
 Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
@@ -143,3 +144,4 @@ au FileType go nmap ,oi <Plug>(go-info)
 au FileType go nmap ,od <Plug>(go-doc)
 au FileType go nmap ,op :GoImports<CR>
 au FileType go nmap ,oc <Plug>(go-callstack)
+au FileType go imap <C-o> <C-x><C-o>
