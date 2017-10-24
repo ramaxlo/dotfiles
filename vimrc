@@ -107,6 +107,12 @@ nmap ,ga :Gwrite<CR>
 nmap ,gc :Gcommit<CR>
 nmap ,gd :Gvdiff<CR>
 
+" ==== airline ====
+" Remove comments below if you want to use airline. Also make sure to install
+" DejaVu powerline fonts
+"set laststatus=2
+"let g:airline_powerline_fonts = 1
+
 if (&term == 'xterm' || &term =~? '^screen')
 	" On my machine, I use Konsole with 256 color support
 	set t_Co=256
