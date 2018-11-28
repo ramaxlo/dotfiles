@@ -27,6 +27,7 @@ Plugin 'sessionman.vim'
 Plugin 'DirDiff.vim'
 "Plugin 'motemen/git-vim'
 Plugin 'fugitive.vim'
+"Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
 Plugin 'fatih/vim-go'
@@ -151,3 +152,4 @@ au FileType go nmap ,od <Plug>(go-doc)
 au FileType go nmap ,op :GoImports<CR>
 au FileType go nmap ,oc <Plug>(go-callstack)
 au FileType go imap <C-o> <C-x><C-o>
+let g:go_bin_path = "~/bin/go"
