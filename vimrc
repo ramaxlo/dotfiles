@@ -148,6 +148,7 @@ let GtagsCscope_Quiet = 1
 
 " ==== Go ====
 let g:go_bin_path = $HOME . '/bin/go'
+let g:go_def_mode = 'godef'
 au FileType go nmap ,oi <Plug>(go-info)
 au FileType go nmap ,od <Plug>(go-doc)
 au FileType go nmap ,op :GoImports<CR>
