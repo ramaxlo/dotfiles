@@ -94,15 +94,73 @@ setup_gitconfig()
 	cp gitconfig ~/.gitconfig
 }
 
+setup_i3()
+{
+	echo "Setup i3 config"
+
+	mkdir -p ~/.config/i3
+	cp -a i3/* ~/.config/i3
+}
+
+setup_polybar()
+{
+	echo "Setup polybar config"
+
+	mkdir -p ~/.config/polybar
+	cp -a polybar/* ~/.config/polybar
+}
+
+setup_font()
+{
+	echo "Setup awesome font"
+
+	mkdir -p ~/.fonts
+
+	unzip -d /tmp fontawesome-free-5.10.2-desktop.zip
+	find /tmp/fontawesome-free-5.10.2-desktop -name "*.otf" -exec mv {} ~/.font \;
+	fc-cache
+
+	rm -rf /tmp/fontawesome-free-5.10.2-desktop
+}
+
+setup_wallpaper()
+{
+	echo "Setup wallpapers"
+
+	cp -a wallpapers ~/
+	feh --fill-bg wallpapers/structure.png
+}
+
+setup_termcolor()
+{
+	echo "Setup terminal color"
+
+	cp Xresources ~/.Xresources
+	cp -a Xresources.d ~/.Xresources.d
+}
+
+setup_compositor()
+{
+	echo "Setup compositor"
+
+	cp compton.conf ~/.config
+}
+
 ################
 #    START
 ################
 
-check
-setup_bin
-setup_tmux
-setup_shell
-setup_vim
-setup_gitconfig
+#check
+#setup_bin
+#setup_tmux
+#setup_shell
+#setup_vim
+#setup_gitconfig
+setup_i3
+setup_polybar
+setup_font
+setup_wallpaper
+setup_termcolor
+setup_compositor
 
 echo "Done"
