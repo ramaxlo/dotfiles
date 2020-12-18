@@ -1,0 +1,5 @@
+Rxvt.scrollBar: False
+!Rxvt.font: xft:DejaVu Sans Mono:pixelsize=16,style=Book
+Rxvt.font: xft:Droid Sans Mono:pixelsize=16,style=Regular
+
+#include ".Xresources.d/monokai"
