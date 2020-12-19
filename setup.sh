@@ -116,8 +116,8 @@ setup_font()
 
 	mkdir -p ~/.fonts
 
-	unzip -d /tmp fontawesome-free-5.10.2-desktop.zip
-	find /tmp/fontawesome-free-5.10.2-desktop -name "*.otf" -exec mv {} ~/.font \;
+	unzip -d /tmp -q fontawesome-free-5.10.2-desktop.zip
+	find /tmp/fontawesome-free-5.10.2-desktop -name "*.otf" -exec mv {} ~/.fonts \;
 	fc-cache
 
 	rm -rf /tmp/fontawesome-free-5.10.2-desktop
@@ -128,7 +128,7 @@ setup_wallpaper()
 	echo "Setup wallpapers"
 
 	cp -a wallpapers ~/
-	feh --fill-bg wallpapers/structure.png
+	feh --bg-fill wallpapers/structure.png
 }
 
 setup_termcolor()
