@@ -110,6 +110,14 @@ setup_polybar()
 	cp -a polybar/* ~/.config/polybar
 }
 
+setup_rofi()
+{
+	echo "Setup rofi config"
+
+	mkdir -p ~/.config/rofi
+	cp -a rofi/* ~/.config/rofi
+}
+
 setup_font()
 {
 	echo "Setup awesome font"
@@ -158,6 +166,7 @@ setup_compositor()
 #setup_gitconfig
 setup_i3
 setup_polybar
+setup_rofi
 setup_font
 setup_wallpaper
 setup_termcolor
