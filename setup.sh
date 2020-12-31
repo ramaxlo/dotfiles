@@ -145,6 +145,8 @@ setup_termcolor()
 
 	cp Xresources ~/.Xresources
 	cp -a Xresources.d ~/.Xresources.d
+
+	cp -a xfce4 ~/.config
 }
 
 setup_compositor()
