@@ -136,7 +136,7 @@ setup_wallpaper()
 	echo "Setup wallpapers"
 
 	cp -a wallpapers ~/
-	feh --bg-fill wallpapers/structure.png
+	feh --bg-fill ~/wallpapers/structure.png
 }
 
 setup_termcolor()
