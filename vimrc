@@ -25,13 +25,11 @@ Plugin 'CSApprox'
 Plugin 'ScrollColors'
 Plugin 'sessionman.vim'
 Plugin 'DirDiff.vim'
-"Plugin 'motemen/git-vim'
 Plugin 'fugitive.vim'
 "Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
 Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " Code and files fuzzy finder
 Plugin 'kien/ctrlp.vim'
@@ -148,7 +146,10 @@ let GtagsCscope_Quiet = 1
 
 " ==== Go ====
 let g:go_bin_path = $HOME . '/bin/go'
+
+" Comment out the following line to use gopls
 let g:go_def_mode = 'godef'
+
 au FileType go nmap ,oi <Plug>(go-info)
 au FileType go nmap ,od <Plug>(go-doc)
 au FileType go nmap ,op :GoImports<CR>
