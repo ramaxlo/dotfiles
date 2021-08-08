@@ -166,6 +166,11 @@ setup_compositor()
 #setup_shell
 #setup_vim
 #setup_gitconfig
+echo "Before continuing, make sure you have installed following packages:"
+echo "  i3-gaps polybar rofi compton feh xfce4-terminal NetworkManager-applet pulseaudio-utils"
+echo -n "Press ENTER if you're ready:"
+read ANS
+
 setup_i3
 setup_polybar
 setup_rofi
