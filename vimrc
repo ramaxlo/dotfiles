@@ -24,9 +24,9 @@ Plugin 'help.vim'
 Plugin 'CSApprox'
 Plugin 'ScrollColors'
 Plugin 'sessionman.vim'
-Plugin 'DirDiff.vim'
+Plugin 'will133/vim-dirdiff'
 Plugin 'fugitive.vim'
-"Plugin 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aceofall/gtags.vim'
 Plugin 'fatih/vim-go'
@@ -109,8 +109,8 @@ nmap ,gd :Gvdiff<CR>
 " ==== airline ====
 " Remove comments below if you want to use airline. Also make sure to install
 " DejaVu powerline fonts
-"set laststatus=2
-"let g:airline_powerline_fonts = 1
+set laststatus=2
+let g:airline_powerline_fonts = 1
 
 if (&term == 'xterm' || &term =~? '^screen')
 	" On my machine, I use Konsole with 256 color support
@@ -148,7 +148,7 @@ let GtagsCscope_Quiet = 1
 let g:go_bin_path = $HOME . '/bin/go'
 
 " Comment out the following line to use gopls
-let g:go_def_mode = 'godef'
+" let g:go_def_mode = 'godef'
 
 au FileType go nmap ,oi <Plug>(go-info)
 au FileType go nmap ,od <Plug>(go-doc)
