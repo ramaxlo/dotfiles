@@ -56,6 +56,7 @@ setup_vim()
 	fi
 
 	cp cscope_maps.vim ~/.vim/plugin
+	cp -a templates ~/.vim/
 
 	cd ~/.vim
 	unzip ~/dotfiles/ColorSamplerPack.zip

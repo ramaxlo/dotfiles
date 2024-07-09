@@ -155,3 +155,11 @@ au FileType go nmap ,od <Plug>(go-doc)
 au FileType go nmap ,op :GoImports<CR>
 au FileType go nmap ,oc <Plug>(go-callstack)
 au FileType go imap <C-o> <C-x><C-o>
+
+" ==== Skeletons ====
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh | $
+    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py | $
+  augroup END
+endif
