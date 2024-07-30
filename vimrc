@@ -18,7 +18,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'YankRing.vim'
 Plugin 'c.vim'
 Plugin 'minibufexpl.vim'
-Plugin 'Markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
 Plugin 'taglist.vim'
 Plugin 'help.vim'
 Plugin 'CSApprox'
@@ -163,3 +164,6 @@ if has("autocmd")
     autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py | $
   augroup END
 endif
+
+" ==== Markdown ====
+let g:vim_markdown_folding_disabled = 1
