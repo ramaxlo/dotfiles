@@ -14,9 +14,6 @@ setup_bin()
 	git clone https://github.com/ramaxlo/grabserial.git
 	cp grabserial/grabserial ~/bin
 	rm -rf grabserial
-
-	echo "Install go related binaries"
-	tar Jxf go_bin.tar.xz -C ~/bin
 }
 
 setup_tmux()
@@ -67,6 +64,7 @@ setup_vim()
 	cd - > /dev/null
 
 	vim +PluginInstall +qa
+	vim +GoInstallBinaries +qa
 }
 
 check()
